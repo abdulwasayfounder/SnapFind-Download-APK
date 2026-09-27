@@ -8,11 +8,11 @@
 // Edit these URLs in one place to update all buttons across the landing page.
 // ==========================================================================
 window.SNAPFIND_CONFIG = {
-  // Official Android APK download URL (points to GitHub Releases latest)
-  androidDownloadUrl: 'https://github.com/YOUR_USERNAME/YOUR_ANDROID_REPOSITORY/releases/latest',
+  // Official Android APK download URL (points to GitHub Releases)
+  androidDownloadUrl: 'https://github.com/abdulwasayfounder/Snapfind/releases',
 
-  // Official Web App URL (exact AI Studio companion URL)
-  webAppUrl: 'https://ai.studio/apps/79820a43-d6e8-4fb0-bf58-67c532dd6733?fullscreenApplet=true'
+  // Official Web App URL
+  webAppUrl: 'https://snapfind.ai.studio'
 };
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -1474,31 +1474,21 @@ p {
   width: 100%;
   max-width: var(--sf-max-width);
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: center;
 }
 
 .ad-slot {
-  display: none; /* Keep containers hidden until real ad code is inserted */
-  width: 100%;
-  max-width: 728px;
-  min-height: 90px;
-  margin: 24px auto;
-  padding: 10px;
-  background: var(--sf-surface);
-  border: 1px dashed var(--sf-border);
-  border-radius: var(--sf-radius-md);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: var(--sf-text-muted);
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  overflow: hidden;
-}
-
-.ad-slot.ad-active {
-  display: flex;
+  width: 100%;
+  max-width: 728px;
+  margin: 24px auto;
+  text-align: center;
+  overflow: visible;
 }
 
 /* Reduced Motion */
