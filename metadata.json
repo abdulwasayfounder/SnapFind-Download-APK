@@ -1,6 +1,6 @@
 {
-  "name": "SnapFind AI - Free Android Screenshot Organizer & AI Search",
-  "description": "Standalone free static marketing website for SnapFind AI, the intelligent Android screenshot organizer with OCR, AI search, Smart Snaps, and private Vault.",
+  "name": "SnapFind AI – AI Screenshot Search & Organizer for Android",
+  "description": "SnapFind AI helps you search, organize and protect screenshots with AI search, OCR, Smart Snaps, private collections, QR and link detection, and offline indexing.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
