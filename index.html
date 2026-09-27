@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Brand Metadata -->
+  <title>SnapFind AI – Free Android Screenshot Organizer &amp; AI Search</title>
+  <meta name="description" content="Search, organize and protect your screenshots with AI-powered OCR, Smart Snaps and private collections. Free Android APK available directly on GitHub.">
+  <meta name="keywords" content="screenshot organizer, AI screenshot search, Android screenshot organizer, screenshot OCR, private screenshot organizer, AI screenshot manager">
+  <link rel="canonical" href="https://YOUR_USERNAME.github.io/snapfind-landing/index.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://YOUR_USERNAME.github.io/snapfind-landing/index.html">
+  <meta property="og:title" content="SnapFind AI – Find Any Screenshot. Instantly.">
+  <meta property="og:description" content="Search, organize and protect your screenshots with AI-powered OCR, Smart Snaps and private collections.">
+  <meta property="og:image" content="https://YOUR_USERNAME.github.io/snapfind-landing/favicon.svg">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SnapFind AI – Find Any Screenshot. Instantly.">
+  <meta name="twitter:description" content="Search, organize and protect your screenshots with AI-powered OCR, Smart Snaps and private collections.">
+  <meta name="twitter:image" content="https://YOUR_USERNAME.github.io/snapfind-landing/favicon.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Scripts: Vanilla JS & Isolated Ads Module -->
+  <script src="script.js" defer></script>
+  <script src="ads.js" defer></script>
+
+  <!-- Schema.org SoftwareApplication Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "SnapFind AI",
+    "operatingSystem": "Android",
+    "applicationCategory": "UtilitiesApplication",
+    "description": "SnapFind AI turns your screenshots into a searchable, organized, and private personal memory using OCR, Smart Snaps, and local indexing.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "downloadUrl": "https://github.com/YOUR_USERNAME/YOUR_ANDROID_REPOSITORY/releases/latest"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar-wrapper">
+    <div class="container navbar">
+      <a href="index.html" class="brand-link" aria-label="SnapFind AI Home">
+        <svg class="brand-logo-img" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="64" height="64" rx="14" fill="#07090D"/>
+          <rect x="2" y="2" width="60" height="60" rx="13" stroke="#1E293B" stroke-width="2"/>
+          <path d="M16 23V17H22" stroke="#CCFF00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M48 23V17H42" stroke="#CCFF00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16 41V47H22" stroke="#00FF66" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M48 41V47H42" stroke="#00FF66" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="30" cy="30" r="9" stroke="#38BDF8" stroke-width="3"/>
+          <path d="M37 37L45 45" stroke="#CCFF00" stroke-width="3.5" stroke-linecap="round"/>
+          <circle cx="30" cy="30" r="3.5" fill="#00FF66"/>
+        </svg>
+        <span>SnapFind <span style="color: var(--sf-primary);">AI</span></span>
+        <span class="brand-badge">Android</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#smart-snaps" class="nav-link">Smart Snaps</a></li>
+          <li><a href="#privacy" class="nav-link">Privacy</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://ai.studio/apps/79820a43-d6e8-4fb0-bf58-67c532dd6733?fullscreenApplet=true" data-sf-link="web-app" class="btn btn-secondary btn-sm" target="_blank" rel="noopener noreferrer">
+          Try SnapFind Web
+        </a>
+        <a href="https://github.com/YOUR_USERNAME/YOUR_ANDROID_REPOSITORY/releases/latest" data-sf-link="android-download" class="btn-nav-download" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download APK
+        </a>
+
+        <button id="mobileToggle" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileDrawer" class="mobile-drawer" aria-label="Mobile Navigation">
+    <a href="#features" class="nav-link">Features</a>
+    <a href="#how-it-works" class="nav-link">How It Works</a>
+    <a href="#smart-snaps" class="nav-link">Smart Snaps</a>
+    <a href="#privacy" class="nav-link">Privacy &amp; Security</a>
+    <a href="#faq" class="nav-link">FAQ</a>
+    <div style="margin-top: 16px; display: flex; flex-direction: column; gap: 10px;">
+      <a href="https://github.com/YOUR_USERNAME/YOUR_ANDROID_REPOSITORY/releases/latest" data-sf-link="android-download" class="btn btn-primary" style="width: 100%;" target="_blank" rel="noopener noreferrer">
+        Download for Android
+      </a>
+      <a href="https://ai.studio/apps/79820a43-d6e8-4fb0-bf58-67c532dd6733?fullscreenApplet=true" data-sf-link="web-app" class="btn btn-secondary" style="width: 100%;" target="_blank" rel="noopener noreferrer">
+        Try SnapFind Web
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="pill-badge">
+            <span class="pill-dot"></span>
+            Free Android APK Release &bull; Direct GitHub Distribution
+          </div>
+
+          <h1 class="hero-title">
+            Find Any Screenshot. <span class="text-gradient-primary">Instantly.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Search, organize and protect your screenshots with AI-powered OCR, Smart Snaps and private collections.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="https://github.com/YOUR_USERNAME/YOUR_ANDROID_REPOSITORY/releases/latest" data-sf-link="android-download" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Download for Android
+            </a>
+
+            <a href="https://ai.studio/apps/79820a43-d6e8-4fb0-bf58-67c532dd6733?fullscreenApplet=true" data-sf-link="web-app" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Try SnapFind Web
+            </a>
+          </div>
+
+          <div class="hero-badges-row">
+            <div class="hero-meta-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>100% Free APK</span>
+            </div>
+            <div class="hero-meta-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              <span>Locked Private Vault</span>
+            </div>
+            <div class="hero-meta-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>Instant On-Device Indexing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lightweight SnapFind App Preview Mockup -->
+        <div class="mockup-wrapper" aria-hidden="true">
+          <div class="mockup-glow"></div>
+          <div class="phone-mockup">
+            <div class="phone-camera-island">
+              <div class="phone-lens"></div>
+            </div>
+
+            <div class="phone-screen">
+              <div class="phone-status-bar">
+                <span>09:41</span>
+                <span>5G &bull; 98%</span>
+              </div>
+
+              <div class="phone-app-header">
+                <div class="phone-app-brand">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 8V4h4M20 8V4h-4M4 16v4h4M20 16v4h-4" stroke="#CCFF00"/><circle cx="12" cy="12" r="4" stroke="#38BDF8"/></svg>
+                  <span>SnapFind <span>AI</span></span>
+                </div>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--sf-ai)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+
+              <!-- Search Bar Inside Mockup -->
+              <div class="phone-search-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--sf-primary)" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="text" class="phone-search-input" value="Find receipt $1,450" readonly aria-label="Mock search bar">
+              </div>
+
+              <!-- Mockup Category Chips -->
+              <div class="phone-chips-row">
+                <span class="phone-chip active">All</span>
+                <span class="phone-chip">Banking</span>
+                <span class="phone-chip">Receipts</span>
+                <span class="phone-chip">Vault</span>
+                <span class="phone-chip">Work</span>
+              </div>
+
+              <!-- Mockup Screenshot Cards -->
+              <div class="mockup-cards-list">
+                <div class="mockup-item-card">
+                  <div class="mockup-thumb">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="var(--sf-ai)" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+                  </div>
+                  <div class="mockup-item-info">
+                    <div class="mockup-item-title">Chase Wire Confirmation #8492</div>
+                    <div class="mockup-item-meta">
+                      <span class="mockup-tag mockup-tag-payment">Banking</span>
+                      <span>&bull; $1,450.00 USD</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mockup-item-card">
+                  <div class="mockup-thumb">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="var(--sf-accent-blue)" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  </div>
+                  <div class="mockup-item-info">
+                    <div class="mockup-item-title">Delta Flight Boarding SEA &rarr; SFO</div>
+                    <div class="mockup-item-meta">
+                      <span class="mockup-tag mockup-tag-code">Travel</span>
+                      <span>&bull; Gate B7 &bull; 08:45 AM</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mockup-item-card">
+                  <div class="mockup-thumb">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="var(--sf-attention)" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                  </div>
+                  <div class="mockup-item-info">
+                    <div class="mockup-item-title">Secret Recovery Passphrase</div>
+                    <div class="mockup-item-meta">
+                      <span class="mockup-tag mockup-tag-vault">Locked Vault</span>
+                      <span>&bull; Protected</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AD CONTAINER A: Below Hero Banner (Hidden until ad network configured) -->
+    <div class="ad-slot-wrapper">
+      <div class="ad-slot" data-ad-slot="hero-banner">
+        Advertisement
+      </div>
+    </div>
+
+    <!-- 2. FEATURES SECTION -->
+    <section class="section" id="features" style="background: var(--sf-surface);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Core Features</span>
+          <h2>Built for Speed, Privacy &amp; Organization</h2>
+          <p>Everything you need to effortlessly search, manage, and protect Android screenshots.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <div class="card-icon-box brand">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </div>
+            <h3 class="card-title">AI Screenshot Search</h3>
+            <p class="card-description">Query captures using natural conversational language. Retrieve images by describing concepts, context, or visual details without memorizing dates.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon-box ai">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 7 4 4 20 4 20 7"></polyline><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="4" x2="12" y2="20"></line></svg>
+            </div>
+            <h3 class="card-title">OCR Text Extraction</h3>
+            <p class="card-description">High-accuracy Optical Character Recognition extracts numbers, addresses, balances, tracking codes, and paragraphs directly from screenshot pixels.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon-box amber">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            </div>
+            <h3 class="card-title">Private Vault &amp; Lock</h3>
+            <p class="card-description">Protect banking screenshots, identity documents, and sensitive notes behind biometric authentication (fingerprint/face) or PIN code security.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon-box blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+            </div>
+            <h3 class="card-title">URL &amp; QR Detection</h3>
+            <p class="card-description">Recognizes website links and readable QR codes embedded in captures, enabling 1-tap clipboard copying or direct browser navigation.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon-box purple">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            </div>
+            <h3 class="card-title">Duplicate Prevention</h3>
+            <p class="card-description">Detects identical burst screenshots via real-time perceptual image hashing, preserving device storage and keeping search results clutter-free.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon-box brand">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
+            <h3 class="card-title">Fast On-Device Indexing</h3>
+            <p class="card-description">Detects new captures immediately in the background, updating your local searchable index without draining battery or processing quota.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. HOW IT WORKS SECTION -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Workflow</span>
+          <h2>How SnapFind Works</h2>
+          <p>From initial screenshot capture to instant retrieval in five seamless steps.</p>
+        </div>
+
+        <div class="how-it-works-timeline">
+          <div class="timeline-step">
+            <div class="timeline-number">1</div>
+            <div class="timeline-title">Capture or Save</div>
+            <div class="timeline-desc">Take a screenshot on your Android device anytime while browsing, chatting, or banking.</div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="timeline-number">2</div>
+            <div class="timeline-title">Detect &amp; Index</div>
+            <div class="timeline-desc">SnapFind detects new screenshots on device, verifying non-duplicate image hashes instantly.</div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="timeline-number">3</div>
+            <div class="timeline-title">OCR &amp; AI Analysis</div>
+            <div class="timeline-desc">Extracts legible text, numbers, QR links, web domains, and contextual keywords.</div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="timeline-number">4</div>
+            <div class="timeline-title">Smart Snaps</div>
+            <div class="timeline-desc">Categorizes captures into Banking, Receipts, Work, Travel, Shopping, or the locked Vault.</div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="timeline-number">5</div>
+            <div class="timeline-title">Search &amp; Find</div>
+            <div class="timeline-desc">Search in natural language to retrieve any captured information in fractions of a second.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AD CONTAINER B: Between Major Content Sections (Hidden until ad network configured) -->
+    <div class="ad-slot-wrapper">
+      <div class="ad-slot" data-ad-slot="mid-content-banner">
+        Advertisement
+      </div>
+    </div>
+
+    <!-- 4. SMART SNAPS SECTION -->
+    <section class="section" id="smart-snaps" style="background: var(--sf-surface);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Intelligent Grouping</span>
+          <h2>Smart Snaps Collections</h2>
+          <p>Automatic classification into clean collections so you never have to manually sort albums.</p>
+        </div>
+
+        <div class="smart-snaps-grid">
+          <div class="snap-category-card">
+            <div class="snap-cat-top">
+              <h3 style="font-size: 1.15rem; color: var(--sf-text);">Banking &amp; Payments</h3>
+              <span class="snap-cat-badge mockup-tag-payment">Financial</span>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--sf-text-secondary);">Wire receipts, transaction IDs, payment confirmations, and account summaries.</p>
+            <div class="snap-examples-box">
+              <ul>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Zelle, Venmo &amp; Wire confirmations</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Transaction reference numbers</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="snap-category-card">
+            <div class="snap-cat-top">
+              <h3 style="font-size: 1.15rem; color: var(--sf-text);">Private &amp; Sensitive</h3>
+              <span class="snap-cat-badge mockup-tag-vault">Locked</span>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--sf-text-secondary);">Passcodes, identity cards, health documents, and confidential screenshots routed to the Vault.</p>
+            <div class="snap-examples-box">
+              <ul>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Recovery phrases &amp; backup keys</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Driver licenses &amp; medical notes</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="snap-category-card">
+            <div class="snap-cat-top">
+              <h3 style="font-size: 1.15rem; color: var(--sf-text);">Receipts &amp; Invoices</h3>
+              <span class="snap-cat-badge" style="background: rgba(56, 189, 248, 0.15); color: var(--sf-accent-blue);">Expenses</span>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--sf-text-secondary);">Digital purchase receipts, rideshare fares, restaurant checks, and subscription invoices.</p>
+            <div class="snap-examples-box">
+              <ul>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Uber, Lyft &amp; transit receipts</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Tax-deductible expense tracking</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="snap-category-card">
+            <div class="snap-cat-top">
+              <h3 style="font-size: 1.15rem; color: var(--sf-text);">Shopping &amp; Wishlists</h3>
+              <span class="snap-cat-badge" style="background: rgba(168, 85, 247, 0.15); color: var(--sf-accent-purple);">Items</span>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--sf-text-secondary);">Clothing items, price drops, gift ideas, and product comparisons saved from social apps.</p>
+            <div class="snap-examples-box">
+              <ul>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> E-commerce prices &amp; coupon codes</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Saved items across stores</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="snap-category-card">
+            <div class="snap-cat-top">
+              <h3 style="font-size: 1.15rem; color: var(--sf-text);">Travel &amp; Itineraries</h3>
+              <span class="snap-cat-badge" style="background: rgba(0, 255, 102, 0.15); color: var(--sf-ai);">Trips</span>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--sf-text-secondary);">Flight bookings, hotel check-ins, boarding passes, train tickets, and itinerary directions.</p>
+            <div class="snap-examples-box">
+              <ul>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Boarding passes &amp; departure gates</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Hotel reservation codes &amp; maps</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="snap-category-card">
+            <div class="snap-cat-top">
+              <h3 style="font-size: 1.15rem; color: var(--sf-text);">Work &amp; Reference</h3>
+              <span class="snap-cat-badge" style="background: rgba(204, 255, 0, 0.15); color: var(--sf-primary);">Productivity</span>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--sf-text-secondary);">Code snippets, terminal logs, presentation slides, chat threads, and research notes.</p>
+            <div class="snap-examples-box">
+              <ul>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Terminal error messages &amp; code logs</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Presentation highlights &amp; links</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PRIVACY & SECURITY SECTION -->
+    <section class="section" id="privacy">
+      <div class="container">
+        <div class="privacy-banner">
+          <div class="pill-badge" style="background: rgba(0, 255, 102, 0.1); border-color: rgba(0, 255, 102, 0.3); color: var(--sf-ai);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            User-Centric Privacy Philosophy
+          </div>
+
+          <h2 style="margin-top: 16px; margin-bottom: 14px;">Your Visual Memory Belongs to You</h2>
+          <p style="max-width: 680px; font-size: 1.05rem;">
+            Screenshots capture intimate fragments of your life: banking statements, conversations, medical appointments, and passwords. SnapFind AI is engineered with rigorous data boundaries.
+          </p>
+
+          <div class="privacy-points-grid">
+            <div class="privacy-point">
+              <div class="privacy-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <div>
+                <h4 style="font-size: 1.1rem; color: var(--sf-text); margin-bottom: 4px;">User-Specific Ownership</h4>
+                <p style="font-size: 0.9rem;">Your screenshots and OCR tokens are bound strictly to your authenticated instance. No other user can query or view your image library.</p>
+              </div>
+            </div>
+
+            <div class="privacy-point">
+              <div class="privacy-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              </div>
+              <div>
+                <h4 style="font-size: 1.1rem; color: var(--sf-text); margin-bottom: 4px;">Lockable Collections &amp; Vault</h4>
+                <p style="font-size: 0.9rem;">Mark sensitive items with PIN or biometric lock. Locked items are excluded from unauthenticated quick previews and global search.</p>
+              </div>
+            </div>
+
+            <div class="privacy-point">
+              <div class="privacy-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+              </div>
+              <div>
+                <h4 style="font-size: 1.1rem; color: var(--sf-text); margin-bottom: 4px;">Permanent Deletion Control</h4>
+                <p style="font-size: 0.9rem;">When you delete a screenshot in SnapFind, its indexed tokens, OCR text, and metadata are permanently expunged.</p>
+              </div>
+            </div>
+
+            <div class="privacy-point">
+              <div class="privacy-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line></svg>
+              </div>
+              <div>
+                <h4 style="font-size: 1.1rem; color: var(--sf-text); margin-bottom: 4px;">Zero Ad-Data Sharing</h4>
+                <p style="font-size: 0.9rem;">Website advertising scripts are strictly isolated: no screenshot media, OCR text, or metadata is ever shared with advertising providers.</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 32px;">
+            <a href="privacy.html" class="btn btn-secondary btn-sm">Read Complete Privacy Policy &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. URL & QR DETECTION SECTION -->
+    <section class="section" style="background: var(--sf-surface);">
+      <div class="container">
+        <div class="deep-dive-box">
+          <div>
+            <div class="pill-badge" style="margin-bottom: 16px;">
+              <span class="pill-dot"></span>
+              Link &amp; Barcode Intelligence
+            </div>
+            <h2 style="margin-bottom: 16px;">URL &amp; QR Code Detection</h2>
+            <p style="margin-bottom: 20px;">
+              Screenshots frequently contain web links and QR codes that are inconvenient to retype. SnapFind inspects the image pixels directly:
+            </p>
+            <ul class="tech-specs-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--sf-ai)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>URL &amp; Domain Detection:</strong> Identifies standard protocols (https://), domains, and article paths.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--sf-ai)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>1-Tap Action:</strong> Quickly copy detected URLs to clipboard or open valid links in your browser.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--sf-ai)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>QR Code Decoding:</strong> Reads standard QR codes on event passes, Wi-Fi credentials, and menus.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div style="background: var(--sf-surface-elevated); border: 1px solid var(--sf-border); border-radius: var(--sf-radius-lg); padding: 24px;">
+            <div style="font-size: 0.85rem; font-weight: 700; color: var(--sf-primary); margin-bottom: 12px; text-transform: uppercase;">Detection Example</div>
+            <div style="background: #05070A; border: 1px solid var(--sf-border); border-radius: 8px; padding: 16px; margin-bottom: 16px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <span style="font-size: 0.75rem; color: var(--sf-text-muted);">DETECTED PROTOCOL: HTTPS</span>
+                <span class="mockup-tag mockup-tag-code">Live Link</span>
+              </div>
+              <div style="font-family: monospace; font-size: 0.9rem; color: var(--sf-accent-blue); word-break: break-all;">
+                https://github.com/developer/project-docs/releases
+              </div>
+            </div>
+
+            <div style="background: #05070A; border: 1px solid var(--sf-border); border-radius: 8px; padding: 16px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <span style="font-size: 0.75rem; color: var(--sf-text-muted);">DECODED QR CODE PAYLOAD</span>
+                <span class="mockup-tag mockup-tag-payment">Wi-Fi Config</span>
+              </div>
+              <div style="font-family: monospace; font-size: 0.85rem; color: var(--sf-ai);">
+                WIFI:S:Guest_HQ_5GHz;T:WPA;P:Stride2026Secure!;;
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. OFFLINE INDEXING SECTION -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Engineering Transparency</span>
+          <h2>Offline Indexing &amp; AI Processing</h2>
+          <p>Clear, honest engineering on how SnapFind operates offline versus connected.</p>
+        </div>
+
+        <div class="deep-dive-box">
+          <div>
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 16px;">
+              <div class="card-icon-box brand" style="margin-bottom: 0;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 1l22 22"></path><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path><path d="M10.71 5.05A16 16 0 0 1 22.58 9"></path><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+              </div>
+              <h3 style="font-size: 1.35rem;">When You Are Offline</h3>
+            </div>
+            <ul class="tech-specs-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Local Screenshot Detection:</strong> New captures saved on your Android device are detected immediately by local media observers.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Instant Local Indexing:</strong> Timestamps, perceptual duplicate hashes, and cached OCR records remain searchable locally.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Locked Vault Access:</strong> Biometric and PIN unlock operate entirely on-device without network requirements.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 16px;">
+              <div class="card-icon-box ai" style="margin-bottom: 0;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+              </div>
+              <h3 style="font-size: 1.35rem;">When Cloud AI is Needed</h3>
+            </div>
+            <ul class="tech-specs-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--sf-ai)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Semantic Reasoning:</strong> High-level natural-language reasoning queues safely until connectivity returns.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--sf-ai)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>No Fake Offline Claims:</strong> We never falsely claim that multi-billion parameter cloud AI runs locally on mobile silicon.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--sf-ai)" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Queue Sync:</strong> Once internet access is restored, queued items process automatically in the background.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. FAQ SECTION -->
+    <section class="section" id="faq" style="background: var(--sf-surface);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Frequently Asked Questions</span>
+          <h2>Common Inquiries</h2>
+          <p>Clear, direct answers about indexing, compatibility, and privacy.</p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>What is SnapFind AI?</span>
+              <svg class="faq-icon-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-content">
+              SnapFind AI is an intelligent visual memory and search application for Android. It monitors, OCR-indexes, and categorizes screenshots on your phone so you can search them naturally—like typing &ldquo;Find wire transfer receipt&rdquo; or &ldquo;Wi-Fi guest code&rdquo;—and retrieve them in seconds.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Does SnapFind prevent duplicate screenshot indexing?</span>
+              <svg class="faq-icon-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-content">
+              Yes. SnapFind uses perceptual image hashing to identify identical screenshots taken consecutively or re-saved. Duplicate captures are bypassed, preserving device storage and keeping your search clean.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>How do I install the Android APK without Google Play?</span>
+              <svg class="faq-icon-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-content">
+              Download the APK directly from our GitHub Releases page onto your Android device. When prompted, permit your browser to install unknown apps (standard for direct APK installs), tap Install, and launch the app.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Can I protect sensitive screenshots like banking or IDs?</span>
+              <svg class="faq-icon-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-content">
+              Yes. SnapFind includes a locked Vault with biometric (fingerprint/face) and PIN authentication. Sensitive images placed in the Vault are hidden from open browsing and unauthenticated queries.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Does SnapFind work offline?</span>
+              <svg class="faq-icon-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-content">
+              Local detection, duplicate checking, Vault authentication, and search against previously indexed local captures operate completely offline. Cloud-dependent deep semantic analysis queues safely until an internet connection is re-established.
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 36px;">
+          <a href="faq.html" class="btn btn-secondary btn-sm">View All Questions &amp; Answers &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- AD CONTAINER C: Bottom Banner before Final Download CTA (Hidden until ad network configured) -->
+    <div class="ad-slot-wrapper">
+      <div class="ad-slot" data-ad-slot="bottom-banner">
+        Advertisement
+      </div>
+    </div>
+
+    <!-- 9. DOWNLOAD CTA SECTION -->
+    <section class="section" id="download">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>Download SnapFind for Android</h2>
+          <p>
+            Start indexing your screenshots into an instant, searchable personal memory. Free Android APK available directly on GitHub.
+          </p>
+
+          <div class="cta-actions">
+            <a href="https://github.com/YOUR_USERNAME/YOUR_ANDROID_REPOSITORY/releases/latest" data-sf-link="android-download" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Download APK
+            </a>
+
+            <a href="https://ai.studio/apps/79820a43-d6e8-4fb0-bf58-67c532dd6733?fullscreenApplet=true" data-sf-link="web-app" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Try SnapFind Web
+            </a>
+          </div>
+
+          <div class="cta-note">
+            Free Android APK &bull; Requires Android 9.0+ &bull; No Google Play account required
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 10. FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <div class="brand-link">
+            <svg class="brand-logo-img" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="64" height="64" rx="14" fill="#07090D"/>
+              <rect x="2" y="2" width="60" height="60" rx="13" stroke="#1E293B" stroke-width="2"/>
+              <circle cx="30" cy="30" r="9" stroke="#38BDF8" stroke-width="3"/>
+              <path d="M37 37L45 45" stroke="#CCFF00" stroke-width="3.5" stroke-linecap="round"/>
+              <circle cx="30" cy="30" r="3.5" fill="#00FF66"/>
+            </svg>
+            <span>SnapFind <span style="color: var(--sf-primary);">AI</span></span>
+          </div>
+          <p class="footer-desc">
+            A standalone personal visual memory engine for Android. Search, organize, and protect screenshots through OCR and intelligent indexing.
+          </p>
+          <div style="font-size: 0.8rem; color: var(--sf-text-muted);">
+            Official Android Distribution &bull; Free Release
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="#features" class="footer-link">Features</a></li>
+            <li><a href="#how-it-works" class="footer-link">How It Works</a></li>
+            <li><a href="#smart-snaps" class="footer-link">Smart Snaps</a></li>
+            <li><a href="#privacy" class="footer-link">Privacy &amp; Security</a></li>
+            <li><a href="#faq" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">Product &amp; App</div>
+          <ul class="footer-links">
+            <li><a href="https://github.com/YOUR_USERNAME/YOUR_ANDROID_REPOSITORY/releases/latest" data-sf-link="android-download" class="footer-link" target="_blank" rel="noopener noreferrer">Download APK</a></li>
+            <li><a href="https://ai.studio/apps/79820a43-d6e8-4fb0-bf58-67c532dd6733?fullscreenApplet=true" data-sf-link="web-app" class="footer-link" target="_blank" rel="noopener noreferrer">Try SnapFind Web</a></li>
+            <li><a href="features.html" class="footer-link">Feature Details</a></li>
+            <li><a href="support.html#install" class="footer-link">Installation Help</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">Open Source &amp; Legal</div>
+          <ul class="footer-links">
+            <li><a href="https://github.com/YOUR_USERNAME/YOUR_ANDROID_REPOSITORY" class="footer-link" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+            <li><a href="https://github.com/YOUR_USERNAME/YOUR_ANDROID_REPOSITORY/releases" class="footer-link" target="_blank" rel="noopener noreferrer">Release Notes</a></li>
+            <li><a href="privacy.html" class="footer-link" style="color: var(--sf-primary); font-weight: 600;">Privacy Policy</a></li>
+            <li><a href="support.html" class="footer-link">Support &amp; Troubleshooting</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 SnapFind AI. Openly distributed static project.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="privacy.html" class="footer-link" style="color: var(--sf-primary);">Privacy Policy</a>
+          <a href="faq.html" class="footer-link">FAQ</a>
+          <a href="support.html" class="footer-link">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
