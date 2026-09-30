@@ -1,6 +1,6 @@
 {
   "name": "SnapFind AI – AI Screenshot Search & Organizer for Android",
-  "description": "SnapFind AI helps you search, organize and protect screenshots with AI search, OCR, Smart Snaps, private collections, QR and link detection, and offline indexing.",
+  "description": "SnapFind AI helps you search, organize and protect screenshots on Android with AI search, OCR, Smart Snaps, private collections, QR and link detection, and offline indexing.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
